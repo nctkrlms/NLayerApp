@@ -14,9 +14,9 @@ namespace NLayer.Repository.Seeds
         public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Category> builder)
         {
             builder.HasData(
-                new Category { Id = 1, Name = "Mamalar" }, 
-                new Category { Id = 2, Name = "Tasmalar" },
-                new Category { Id = 3, Name = "Oyuncaklar" });
+                new Category { Id = 1, Name = "Mamalar", CreatedDate = DateTime.Now }, 
+                new Category { Id = 2, Name = "Tasmalar", CreatedDate = DateTime.Now },
+                new Category { Id = 3, Name = "Oyuncaklar", CreatedDate = DateTime.Now });
         }
     }
 }
